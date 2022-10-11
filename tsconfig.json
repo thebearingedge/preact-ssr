@@ -2,6 +2,10 @@
   "compilerOptions": {
     "strict": true,
     "jsx": "react-jsx",
-    "jsxImportSource": "preact"
+    "jsxImportSource": "preact",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017"
   }
 }
