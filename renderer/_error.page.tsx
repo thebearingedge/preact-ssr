@@ -1,4 +1,8 @@
-export function Page({ is404 }) {
+type ErrorPageProps = {
+  is404: boolean
+}
+
+export function Page({ is404 }: ErrorPageProps) {
   if (is404) {
     return (
       <>
