@@ -7,6 +7,7 @@
     "prepreview": "vite build"
   },
   "dependencies": {
+    "@fastify/middie": "^8.0.0",
     "@preact/preset-vite": "^2.4.0",
     "dotenv": "^16.0.3",
     "fastify": "^4.8.1",

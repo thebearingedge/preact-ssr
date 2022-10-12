@@ -1,6 +1,6 @@
+import { FunctionComponent } from 'preact'
 import renderToString from 'preact-render-to-string'
 import { escapeInject, dangerouslySkipEscape } from 'vite-plugin-ssr'
-import { FunctionComponent } from 'preact'
 
 export const passToClient = ['pageProps']
 
@@ -9,7 +9,7 @@ type RenderProps = {
   pageProps: {}
 }
 
-export function render({ Page, pageProps }: RenderProps) {
+export async function render({ Page, pageProps }: RenderProps) {
   return {
     pageContext: {},
     documentHtml: escapeInject`<!doctype html>${dangerouslySkipEscape(
